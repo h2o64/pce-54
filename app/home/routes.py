@@ -22,11 +22,10 @@ def route_template(template):
 
         if not template.endswith( '.html' ):
             template += '.html'
-
-        return render_template( template )
+        return render_template( template, is_b2b=current_user.is_b2b)
 
     except TemplateNotFound:
-        return render_template('page-404.html'), 404
+        return render_template('page-404.html', is_b2b=current_user.is_b2b), 404
     
     except:
-        return render_template('page-500.html'), 500
+        return render_template('page-500.html', is_b2b=current_user.is_b2b), 500
