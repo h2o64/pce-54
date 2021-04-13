@@ -50,6 +50,14 @@
                     {{ form.password(placeholder="Password", class="form-control", type="password") }}
               </div>
 
+              <div class="input-group mb-4">
+                  <label class="c-switch c-switch-pill c-switch-label c-switch-primary">
+                    <input type="checkbox" class="c-switch-input" checked>
+                    <span class="c-switch-slider" data-checked="B2B" data-unchecked="B2C"></span>
+                    {{ form.is_b2b(class="c-switch-input") }}
+                  </label>
+              </div>
+
               <div class="row">
                 <div class="col-6">
                   <button type="submit" name="register" class="btn btn-primary px-4">Register</button>

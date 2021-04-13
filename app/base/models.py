@@ -4,7 +4,7 @@ Copyright (c) 2019 - present AppSeed.us
 """
 
 from flask_login import UserMixin
-from sqlalchemy import Binary, Column, Integer, String
+from sqlalchemy import Binary, Column, Integer, String, Boolean
 
 from app import db, login_manager
 
@@ -18,6 +18,7 @@ class User(db.Model, UserMixin):
     username = Column(String, unique=True)
     email = Column(String, unique=True)
     password = Column(Binary)
+    is_b2b = Column(Boolean)
 
     def __init__(self, **kwargs):
         for property, value in kwargs.items():
@@ -35,7 +36,6 @@ class User(db.Model, UserMixin):
 
     def __repr__(self):
         return str(self.username)
-
 
 @login_manager.user_loader
 def user_loader(id):
