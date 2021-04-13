@@ -52,9 +52,8 @@
 
               <div class="input-group mb-4">
                   <label class="c-switch c-switch-pill c-switch-label c-switch-primary">
-                    <input type="checkbox" class="c-switch-input" checked>
+                    {{ form.is_b2b(placeholder="B2B", type="checkbox", class="c-switch-input") }}
                     <span class="c-switch-slider" data-checked="B2B" data-unchecked="B2C"></span>
-                    {{ form.is_b2b(class="c-switch-input") }}
                   </label>
               </div>
 

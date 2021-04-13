@@ -18,7 +18,7 @@
 
 
           <li class="c-sidebar-nav-title">Contrats</li>
-          {% if user_b2b %}
+          {% if is_b2b %}
           <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/ui-typography.html">
               <svg class="c-sidebar-nav-icon">
                 <use xlink:href="/static/assets/vendors/@coreui/icons/svg/free.svg#cil-pencil"></use>
@@ -46,7 +46,7 @@
               </svg> Créer un nouveau contrat</a></li>
           {% endif %}
 
-          {% if user_b2b %}
+          {% if is_b2b %}
           <li class="c-sidebar-nav-title">Cloud</li>
           <li class="c-sidebar-nav-item c-sidebar-nav-dropdown"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
               <svg class="c-sidebar-nav-icon">
@@ -74,7 +74,7 @@
               </svg> Créer une nouvelle instance</a></li>
           {% endif %}
 
-          {% if not user_b2b %}
+          {% if not is_b2b %}
           <li class="c-sidebar-nav-title">Patrimoine</li>
           <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/ui-typography.html">
               <svg class="c-sidebar-nav-icon">

@@ -56,6 +56,10 @@ def register():
     create_account_form = CreateAccountForm(request.form)
     if 'register' in request.form:
 
+        # HACK: Change type of request b2b
+        request.form = request.form.copy()
+        request.form['is_b2b'] = 'is_b2b' in request.form
+
         username  = request.form['username']
         email     = request.form['email'   ]
 

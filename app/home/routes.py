@@ -12,8 +12,7 @@ from jinja2 import TemplateNotFound
 @blueprint.route('/index')
 @login_required
 def index():
-
-    return render_template('index.html')
+    return render_template('index.html', is_b2b=current_user.is_b2b)
 
 @blueprint.route('/<template>')
 def route_template(template):
@@ -22,10 +21,11 @@ def route_template(template):
 
         if not template.endswith( '.html' ):
             template += '.html'
+        print("current_user.is_b2b = {}".format(current_user.is_b2b))
         return render_template( template, is_b2b=current_user.is_b2b)
 
     except TemplateNotFound:
-        return render_template('page-404.html', is_b2b=current_user.is_b2b), 404
+        return render_template('page-404.html', is_b2b=False), 404
     
     except:
-        return render_template('page-500.html', is_b2b=current_user.is_b2b), 500
+        return render_template('page-500.html', is_b2b=False), 500
