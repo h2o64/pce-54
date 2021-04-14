@@ -1,0 +1,74 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} UI Cards {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+  <main class="c-main">
+      <div class="container-fluid">
+          <div class="fade-in">
+              <div id="shared-lists" class="row">
+                  <div id="dataList" class="list-group col">
+                      <h3>Données collectées par l'extension</h3>
+                      <div class="list-group-item text-white bg-danger">Adresse email (0.42€)</div>
+                      <div class="list-group-item text-white bg-danger">Numéro de téléphone (0.83€)</div>
+                      <div class="list-group-item text-white bg-success">Cookies (2.42€)</div>
+                      <div class="list-group-item text-white bg-danger">Date de naissance (0.38€)</div>
+                      <div class="list-group-item text-white bg-warning">Localisations GPS (1.51€)</div>
+                      <div class="list-group-item text-white bg-danger">Préférences cultures (0.91€)</div>
+                      <div class="list-group-item text-white bg-success">Préférences politiques (2.86€)</div>
+                      <div class="list-group-item text-white bg-success">Habitudes de consommation (4.38€)</div>
+                      <div class="list-group-item text-white bg-success">Informations financières (6.21€)</div>
+                      <div class="list-group-item text-white bg-success">Santé (1.76€)</div>
+                      <div class="list-group-item text-white bg-warning">Situation familiale (2.45€)</div>
+                  </div>
+                  <div id="clausesList" class="list-group col">
+                      <h3>Clauses disponibles</h3>
+                      <div class="list-group-item bg-white"><span class="badge badge-primary">Cadre</span> Location</div>
+                      <div class="list-group-item bg-white"><span class="badge badge-primary">Cadre</span> Vente</div>
+                      <div class="list-group-item bg-white"><span class="badge badge-secondary">Terminaison</span> Fin anticipée</div>
+                      <div class="list-group-item bg-white"><span class="badge badge-info">Cadre d'utilisation</span> Hors de l'agro-alimentaire</div>
+                      <div class="list-group-item bg-white"><span class="badge badge-info">Cadre d'utilisation</span> Hors de la finance</div>
+                      <div class="list-group-item bg-white"><span class="badge badge-info">Cadre d'utilisation</span> Hors de l'IT</div>
+                      <div class="list-group-item bg-white"><span class="badge badge-info">Cadre d'utilisation</span> Hors de l'industrie textile</div>
+                      <div class="list-group-item bg-white"><span class="badge badge-info">Cadre d'utilisation</span> Hors de l'industrie pharmaceutique</div>
+                      <div class="list-group-item bg-white"><span class="badge badge-danger">Prix</span> Coût variable</div>
+                      <div class="list-group-item bg-white"><span class="badge badge-danger">Prix</span> Coût re-négociable</div>
+                      <div class="list-group-item bg-white"><span class="badge badge-warning">Autre prix</span> Compensation en nature</div>
+                  </div>
+                  <div id="contractList" title="TEST" class="list-group col">
+                      <h3>Contrat</h3>
+                  </div>
+              </div>
+              <div class="row" style="margin-top: 30px">
+                <div class="col text-center">
+                  <a href="/"><button class="btn btn-primary">Soumettre le contrat</button></a>
+                </div>
+          </div>
+      </div>
+  </main>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+  <script>
+    Sortable.create(dataList, {
+        group: 'shared', // set both lists to same group
+        animation: 150
+    });
+
+    Sortable.create(clausesList, {
+        group: 'shared',
+        animation: 150
+    });
+
+    Sortable.create(contractList, {
+        group: 'shared',
+        animation: 150
+    });
+  </script>
+{% endblock javascripts %}
