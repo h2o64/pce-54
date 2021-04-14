@@ -1,0 +1,67 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Charts {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}
+
+  <link href="/static/assets/vendors/@coreui/chartjs/css/coreui-chartjs.css" rel="stylesheet">
+
+{% endblock stylesheets %}
+
+{% block content %}
+
+  <main class="c-main">
+    <div class="container-fluid">
+      <div class="fade-in">
+        <div class="card-columns cols-2">
+          <div class="card">
+            <div class="card-header">Bénéfices
+              </div>
+            <div class="card-body">
+              <div class="c-chart-wrapper">
+                <canvas id="canvas-1"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">Types de données
+              </div>
+            <div class="card-body">
+              <div class="c-chart-wrapper">
+                <canvas id="canvas-2"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">Domaine des entreprises intéressées par votre patrimoine
+              </div>
+            <div class="card-body">
+              <div class="c-chart-wrapper">
+                <canvas id="canvas-4"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">Taille des entreprises intéressées par votre patrimoine
+              </div>
+            <div class="card-body">
+              <div class="c-chart-wrapper">
+                <canvas id="canvas-5"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
+  <script src="/static/assets/vendors/@coreui/chartjs/js/coreui-chartjs.bundle.js"></script>
+  <script src="/static/assets/js/charts_stats.js"></script>
+
+{% endblock javascripts %}
