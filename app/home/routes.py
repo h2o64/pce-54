@@ -21,7 +21,6 @@ def route_template(template):
 
         if not template.endswith( '.html' ):
             template += '.html'
-        print("current_user.is_b2b = {}".format(current_user.is_b2b))
         return render_template( template, is_b2b=current_user.is_b2b)
 
     except TemplateNotFound:

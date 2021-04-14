@@ -1,0 +1,89 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Contrats actifs {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <main class="c-main">
+      <div class="container-fluid">
+        <div class="fade-in">
+          <div class="row">
+            <div class="col-sm-6 col-md-4">
+              <div class="card text-center text-white bg-success">
+                <div class="card-header">Contrats #758 | 👪 </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Valable jusqu'au 29/03/2021</li>
+                      <li class="list-group-item">866 individus</li>
+                      <li class="list-group-item">Prix : 20€/semaine</li>
+                      <li class="list-group-item">Age, Situation familiale</li>
+                      <li class="list-group-item"><a href="#" class="btn btn-primary">Détails</a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+              <div class="card text-center text-white bg-success">
+                <div class="card-header">Contrats #965 | 🧑 </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Valable jusqu'au 17/07/2021</li>
+                      <li class="list-group-item">580 individus</li>
+                      <li class="list-group-item">Prix : 10€/semaine</li>
+                      <li class="list-group-item">Identité civile</li>
+                      <li class="list-group-item"><a href="#" class="btn btn-primary">Détails</a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+              <div class="card text-center text-white bg-success">
+                <div class="card-header">Contrats #938 | 💻 </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Valable jusqu'au 02/04/2021</li>
+                      <li class="list-group-item">1300 individus</li>
+                      <li class="list-group-item">Prix : 40€/semaine</li>
+                      <li class="list-group-item">CV, Retours professionnels</li>
+                      <li class="list-group-item"><a href="#" class="btn btn-primary">Détails</a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- /.col-->
+          </div>
+          <!-- /.row-->
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Modal title</h4>
+                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body">
+                  <p>One fine body…</p>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                  <button class="btn btn-primary" type="button">Save changes</button>
+                </div>
+              </div>
+              <!-- /.modal-content-->
+            </div>
+            <!-- /.modal-dialog-->
+          </div>
+        </div>
+      </div>
+    </main>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

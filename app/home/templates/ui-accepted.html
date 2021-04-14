@@ -1,0 +1,211 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Contrats actifs {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <main class="c-main">
+      <div class="container-fluid">
+        <div class="fade-in">
+          <div class="row">
+            <div class="col-sm-6 col-md-4">
+              <div class="card text-center">
+                {% if is_b2b %}
+                <div class="card-header">Contrats #788 | 🍔 🛰️ </div>
+                {% else %}
+                <div class="card-header">Contrat #788 | 🍔 🛰️</div>
+                {% endif %}
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                      {% if is_b2b %}
+                      <li class="list-group-item">Valable jusqu'au 29/08/2021</li>
+                      <li class="list-group-item">750 individus</li>
+                      {% else %}
+                      <li class="list-group-item">Fait le 29/08/2021</li>
+                      <li class="list-group-item">Contrat de vente</li>
+                      <li class="list-group-item">Prix de vente : 0.30€</li>
+                      {% endif %}
+                      <li class="list-group-item">Préférence alimentaires, Localisation GPS</li>
+                      <li class="list-group-item"><a href="#" class="btn btn-primary">Détails</a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+              <div class="card text-center">
+                {% if is_b2b %}
+                <div class="card-header">Contrats #787 | 🛰️ 💑 </div>
+                {% else %}
+                <div class="card-header">Contrat #787 | 🛰️ 💑 </div>
+                {% endif %}
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                      {% if is_b2b %}
+                      <li class="list-group-item">Valable jusqu'au 15/07/2021</li>
+                      <li class="list-group-item">586 individus</li>
+                      {% else %}
+                      <li class="list-group-item">Fait le 15/07/2021</li>
+                      <li class="list-group-item">Contrat de location</li>
+                      <li class="list-group-item">Prix de location : 0.10€/semaine</li>
+                      {% endif %}
+                      <li class="list-group-item">Localisation, Situation amoureuse</li>
+                      <li class="list-group-item"><a href="#" class="btn btn-primary">Détails</a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+              <div class="card text-center">
+                {% if is_b2b %}
+                <div class="card-header">Contrats #786 | 🍿 </div>
+                {% else %}
+                <div class="card-header">Contrat #786 | 🍿 </div>
+                {% endif %}
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                      {% if is_b2b %}
+                      <li class="list-group-item">Valable jusqu'au 24/04/2021</li>
+                      <li class="list-group-item">1000 individus</li>
+                      {% else %}
+                      <li class="list-group-item">Fait le 24/04/2021</li>
+                      <li class="list-group-item">Contrat de location</li>
+                      <li class="list-group-item">Prix de location : 0.15€/semaine</li>
+                      {% endif %}
+                      <li class="list-group-item">Intérêts culturels</li>
+                      <li class="list-group-item"><a href="#" class="btn btn-primary">Détails</a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+              <div class="card text-center">
+                {% if is_b2b %}
+                <div class="card-header">Contrats #785 | 🗳️</div>
+                {% else %}
+                <div class="card-header">Contrat #785 | 🗳️</div>
+                {% endif %}
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                      {% if is_b2b %}
+                      <li class="list-group-item">Valable jusqu'au 01/04/2021</li>
+                      <li class="list-group-item">600 individus</li>
+                      {% else %}
+                      <li class="list-group-item">Fait le 01/04/2021</li>
+                      <li class="list-group-item">Contrat de location</li>
+                      <li class="list-group-item">Prix de location : 0.25€/semaine</li>
+                      {% endif %}
+                      <li class="list-group-item">Intérêts politiques</li>
+                      <li class="list-group-item"><a href="#" class="btn btn-primary">Détails</a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+              <div class="card text-center">
+                {% if is_b2b %}
+                <div class="card-header">Contrats #785 | 🍪 🏠 🛰️ 💰 </div>
+                {% else %}
+                <div class="card-header">Contrat #785 | 🍪 🏠 🛰️ 💰 </div>
+                {% endif %}
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                      {% if is_b2b %}
+                      <li class="list-group-item">Valable jusqu'au 25/05/2021</li>
+                      <li class="list-group-item">1500 individus</li>
+                      {% else %}
+                      <li class="list-group-item">Fait le 25/05/2021</li>
+                      <li class="list-group-item">Contrat de vente</li>
+                      <li class="list-group-item">Prix de vente : 15€</li>
+                      {% endif %}
+                      <li class="list-group-item">Cookies, Adresses, Stabilité financière</li>
+                      <li class="list-group-item"><a href="#" class="btn btn-primary">Détails</a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+              <div class="card text-center">
+                {% if is_b2b %}
+                <div class="card-header">Contrats #784 | 🏦 👔 </div>
+                {% else %}
+                <div class="card-header">Contrat #784 | 🏦 👔 </div>
+                {% endif %}
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                      {% if is_b2b %}
+                      <li class="list-group-item">Valable jusqu'au 24/07/2021</li>
+                      <li class="list-group-item">400 individus</li>
+                      {% else %}
+                      <li class="list-group-item">Fait le 24/07/2021</li>
+                      <li class="list-group-item">Contrat de vente</li>
+                      <li class="list-group-item">Prix de vente : 25€</li>
+                      {% endif %}
+                      <li class="list-group-item">Prêts en cours, Performance professionnelle</li>
+                      <li class="list-group-item"><a href="#" class="btn btn-primary">Détails</a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+              <div class="card text-center">
+                {% if is_b2b %}
+                <div class="card-header">Contrats #783 | 🏥 💉 </div>
+                {% else %}
+                <div class="card-header">Contrat #783 | 🏥 💉 </div>
+                {% endif %}
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                      {% if is_b2b %}
+                      <li class="list-group-item">Valable jusqu'au 06/06/2021</li>
+                      <li class="list-group-item">800 individus</li>
+                      {% else %}
+                      <li class="list-group-item">Fait le 06/06/2021</li>
+                      <li class="list-group-item">Contrat de vente</li>
+                      <li class="list-group-item">Prix de vente : 45€</li>
+                      {% endif %}
+                      <li class="list-group-item">État de santé, Numéro de sécurité sociale, Dépenses de santé</li>
+                      <li class="list-group-item"><a href="#" class="btn btn-primary">Détails</a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- /.col-->
+          </div>
+          <!-- /.row-->
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Modal title</h4>
+                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body">
+                  <p>One fine body…</p>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                  <button class="btn btn-primary" type="button">Save changes</button>
+                </div>
+              </div>
+              <!-- /.modal-content-->
+            </div>
+            <!-- /.modal-dialog-->
+          </div>
+        </div>
+      </div>
+    </main>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
